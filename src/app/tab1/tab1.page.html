@@ -1,17 +1,29 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      To-Do Lists
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content  [scrollEvents]="true" (ionScrollStart)="logScrollStart()"
+(ionScroll)="logScrolling($event)"
+(ionScrollEnd)="logScrollEnd()">
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+
+<!-- Checkboxes in a List -->
+<div class="fixed">
+<ion-list class="mylist">
+ 
+  <ion-item *ngFor="let entry of form">
+    <ion-label>{{entry.val}}</ion-label>
+    <ion-checkbox slot="start" [(ngModel)]="entry.isChecked"></ion-checkbox>
+    <ion-input required type="text" oninput="handleFirstNameValue(event)"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="Addtask()"> + Add Task </ion-button>
+</ion-list>
+</div>
+
+
 </ion-content>
