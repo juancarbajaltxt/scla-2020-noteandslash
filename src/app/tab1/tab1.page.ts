@@ -11,13 +11,13 @@ export class Tab1Page {
 
 
   public form = [
-    { val: 'Task 1', isChecked: true },
-    { val: 'Task 2', isChecked: false },
+    { val: ' ', isChecked: true },
+    { val: ' ', isChecked: false },
 
   ];
   Addtask() {
     this.form.push(
-      { val: 'New task', isChecked: false },
+      { val: ' ', isChecked: false },
     )
   }
 
