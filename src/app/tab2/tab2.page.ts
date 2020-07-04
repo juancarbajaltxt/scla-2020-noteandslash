@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Plugins, LocalNotificationEnabledResult, LocalNotificationActionsPerformed, } 
+ 
 
 @Component({
   selector: 'app-tab2',

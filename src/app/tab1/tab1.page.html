@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      To-Do Lists
+      To-Do List
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -10,20 +10,26 @@
 (ionScroll)="logScrolling($event)"
 (ionScrollEnd)="logScrollEnd()">
 
+<ion-button routerLink="/addtask" expand="block"> Add Task </ion-button>
 
 <!-- Checkboxes in a List -->
 <div class="fixed">
 <ion-list class="mylist">
  
+    
   <ion-item *ngFor="let entry of form">
     <ion-label>{{entry.val}}</ion-label>
     <ion-checkbox slot="start" [(ngModel)]="entry.isChecked"></ion-checkbox>
     <ion-input required type="text"></ion-input>
   </ion-item>
 
-  <ion-button (click)="Addtask()"> + Add Task </ion-button>
 </ion-list>
 </div>
 
+
+
+
+
+<ion-button [routerLink]="['/app-add-tasks']">blogPost</ion-button>
 
 </ion-content>

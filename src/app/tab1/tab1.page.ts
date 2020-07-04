@@ -11,8 +11,7 @@ export class Tab1Page {
 
 
   public form = [
-    { val: ' ', isChecked: true },
-    { val: ' ', isChecked: false },
+    { val: '', isChecked: false },
 
   ];
   Addtask() {
