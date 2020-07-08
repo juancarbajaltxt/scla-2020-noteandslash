@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      To-Do List
+      
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -10,7 +10,7 @@
 (ionScroll)="logScrolling($event)"
 (ionScrollEnd)="logScrollEnd()">
 
-<ion-button routerLink="/addtask" expand="block"> Add Task </ion-button>
+<ion-button [routerLink]="['/app-add-tasks']" routerDirection="forward" id="btn" expand="block">Add Task </ion-button>
 
 <!-- Checkboxes in a List -->
 <div class="fixed">
@@ -25,11 +25,5 @@
 
 </ion-list>
 </div>
-
-
-
-
-
-<ion-button [routerLink]="['/app-add-tasks']">blogPost</ion-button>
 
 </ion-content>
