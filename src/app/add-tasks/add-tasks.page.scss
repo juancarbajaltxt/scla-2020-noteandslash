@@ -19,5 +19,16 @@
 }
 #previous {
 text-align: left;
-
+}
+#btn {
+    position: absolute;
+    width: 110px;
+    height: 50px;
+    right: 40px; 
+}
+#btntext {
+    margin-top: auto;
+    margin-bottom: auto;
+    color: black;
+    font-weight: 300
 }
