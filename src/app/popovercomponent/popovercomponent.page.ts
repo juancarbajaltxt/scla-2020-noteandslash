@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PopoverController } from '@ionic/angular' 
 
 @Component({
   selector: 'app-popovercomponent',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PopovercomponentPage implements OnInit {
 
-  constructor() { }
+  constructor(private popover:PopoverController) { }
 
   ngOnInit() {
   }
+
+  ClosePopover()
+{
+  this.popover.dismiss();
+}
 
 }
