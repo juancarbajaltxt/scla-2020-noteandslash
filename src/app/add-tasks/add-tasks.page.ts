@@ -11,10 +11,4 @@ export class AddTasksPage  {
   
   constructor( private popoverController: PopoverController) { 
    }
-CreatePopover(
-  {
-    this.popover.create({component:PopovercomponentPage, showBackdrop:false}).then((popoverElement))=>{
-      HTMLIonPopoverElement.present();
-    })
   }
-}

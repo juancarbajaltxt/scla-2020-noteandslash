@@ -25,10 +25,13 @@ text-align: left;
     width: 110px;
     height: 50px;
     right: 40px; 
+    --ion-color-secondary:#501CBE;  
 }
 #btntext {
     margin-top: auto;
     margin-bottom: auto;
-    color: black;
     font-weight: 300
+}
+ion-content {
+    --ion-background-color:#ECEFFF;
 }
