@@ -10,10 +10,6 @@ const routes: Routes = [
     path: 'app-add-tasks',
     loadChildren: () => import('./add-tasks/add-tasks.module').then(m => m.AddTasksPageModule)
   },
-  {
-    path: 'popovercomponent',
-    loadChildren: () => import('./popovercomponent/popovercomponent.module').then( m => m.PopovercomponentPageModule)
-  }
 ];
 
 @NgModule({

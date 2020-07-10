@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PopoverController } from '@ionic/angular';
-import {PopovercomponentPage} from '../popovercomponent/popovercomponent.page'; 
+import { PopoverController,} from '@ionic/angular';
+import { PopovercomponentPage } from '../popovercomponent/popovercomponent.page';
 
 @Component({
   selector: 'app-add-tasks',
@@ -9,8 +9,12 @@ import {PopovercomponentPage} from '../popovercomponent/popovercomponent.page';
 })
 export class AddTasksPage  {
   
-  constructor(private popover:PopoverController) 
+  constructor( private popoverController: PopoverController) { 
+   }
+CreatePopover(
   {
-  
+    this.popover.create({component:PopovercomponentPage, showBackdrop:false}).then((popoverElement))=>{
+      HTMLIonPopoverElement.present();
+    })
   }
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PopoverController } from '@ionic/angular' 
+import { PopoverController } from '@ionic/angular';
 
 @Component({
   selector: 'app-popovercomponent',
@@ -7,15 +7,12 @@ import { PopoverController } from '@ionic/angular'
   styleUrls: ['./popovercomponent.page.scss'],
 })
 export class PopovercomponentPage implements OnInit {
-
-  constructor(private popover:PopoverController) { }
+  constructor(private popover: PopoverController) {}
 
   ngOnInit() {
   }
-
-  ClosePopover()
-{
-  this.popover.dismiss();
-}
-
+  ClosePopover() 
+  {
+   this.popover.dismiss(); 
+  }
 }
