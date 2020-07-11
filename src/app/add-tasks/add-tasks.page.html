@@ -1,6 +1,6 @@
 
 <ion-content>
- <ion-toolbar> <ion-buttons routerLink = "/tabs" slot="start"> <ion-back-button defaultHref="home"></ion-back-button> </ion-buttons> </ion-toolbar> 
+ <ion-toolbar id="tbbg"> <ion-buttons routerLink = "/tabs" slot="start"> <ion-back-button defaultHref="home"></ion-back-button> </ion-buttons> </ion-toolbar> 
  <h1 id="Headers"> <u> Add Task </u> </h1>
 <div id="Desc"> 
   <ion-textarea id="Tdesc" placeholder="Description"></ion-textarea>
@@ -11,6 +11,5 @@
   <ion-datetime pickerFormat="DDD, MMM, D, h:mm, A" displayFormat="DDD, MMM D, h:mm, A" placeholder="Month, Date, Time"></ion-datetime>
 </ion-item>
 <br>
-<ion-button id="btn" color="tertiary"> <h1 id="btntext">SAVE</h1> </ion-button>
-<ion-button (click)="CreatePopover()">Popover</ion-button>
+<ion-button id="btn" color="tertiary" (click)="CreatePopover()"> <h1 id="btntext">SAVE</h1> </ion-button>
 </ion-content>

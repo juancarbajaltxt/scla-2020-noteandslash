@@ -8,6 +8,9 @@ import { AddTasksPageRoutingModule } from './add-tasks-routing.module';
 
 import { AddTasksPage } from './add-tasks.page';
 
+import { PopoverComponent } from '../popover/popover.component';
+
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +18,6 @@ import { AddTasksPage } from './add-tasks.page';
     IonicModule,
     AddTasksPageRoutingModule
   ],
-  declarations: [AddTasksPage]
+  declarations: [AddTasksPage, PopoverComponent]
 })
 export class AddTasksPageModule {}

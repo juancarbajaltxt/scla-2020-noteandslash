@@ -7,15 +7,16 @@
     width: 331px;
     position: relative;
     left: 22px;
+    background: #ffffff;
 }
 #Tdesc {
     position: absolute;
-    
      left: 8px;
 }
 #Headers {
     text-align: center; 
-    font-weight: 300
+    font-weight: 500
+
 }
 #previous {
 text-align: left;
@@ -34,4 +35,7 @@ text-align: left;
 }
 ion-content {
     --ion-background-color:#ECEFFF;
+}
+#tbbg {
+    background: #ECEFFF;
 }
