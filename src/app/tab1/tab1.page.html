@@ -15,10 +15,9 @@
 <!-- Checkboxes in a List -->
 <div class="fixed">
 <ion-list class="mylist">
- 
-    
-  <ion-item *ngFor="let entry of form">
-    <ion-label>{{entry.val}}</ion-label>
+ {{tasks}}
+  <ion-item *ngFor="let task of tasks">
+    <ion-label></ion-label>
     <ion-checkbox  slot="start" [(ngModel)]="entry.isChecked"> {{input3.input4}} </ion-checkbox>
     <ion-input id="add" [{ngModel}]="suceess" required type="text"></ion-input>
   </ion-item> 

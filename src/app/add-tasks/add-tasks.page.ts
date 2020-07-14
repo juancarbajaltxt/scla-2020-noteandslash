@@ -9,11 +9,13 @@ import { TaskaddedService } from '../services/taskadded.service';
   styleUrls: ['./add-tasks.page.scss'],
 })
 export class AddTasksPage  {
-  input: string ="";
+  input: string;
+  tasks = {task: this.input};
   added(){
-    console.log(this.input);
-  this.TaskaddedService.setData(this.input); 
-  // this.TaskaddedService.asdf(); 
+  // console.log(this.input);
+  this.tasks.task = this.input;
+  // console.log(this.tasks);
+  this.TaskaddedService.setData(this.tasks); 
   }
 
   constructor(private popover: PopoverController, private TaskaddedService: TaskaddedService) { 

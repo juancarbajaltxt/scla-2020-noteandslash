@@ -7,9 +7,9 @@ import { TaskaddedService } from '../services/taskadded.service';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page implements OnInit { 
-  data: any; 
-  constructor(private TaskaddedService: TaskaddedService) { var plus=this.TaskaddedService.getData();
-    console.log(plus); }
+  tasks: any; 
+  constructor(private TaskaddedService: TaskaddedService) { this.tasks=this.TaskaddedService.getData();
+    console.log(this.tasks); }
   anywhere={}
   input2= {} 
   input3={input4:this.input2}
@@ -32,9 +32,7 @@ export class Tab1Page implements OnInit {
     )
   }
   ngOnInit() {
-  //   this.TaskaddedService.getData (); 
-  //   this.TaskaddedService.setData (this.input2); 
-    var plus=this.TaskaddedService.getData();
-    console.log(plus);
+    this.tasks=this.TaskaddedService.getData();
+    console.log(this.tasks); 
   } 
   }
